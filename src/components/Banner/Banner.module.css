@@ -1,0 +1,19 @@
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick_slide_image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.loading_banner {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  background-color: var(--primary-black);
+}

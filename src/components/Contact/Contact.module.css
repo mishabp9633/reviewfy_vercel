@@ -1,0 +1,29 @@
+.main {
+  width: 100%;
+  background: linear-gradient(90.57deg, #44e465 2.34%, #f2fdab 99.41%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 5%;
+}
+.text {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--primary-black);
+}
+.contact_btn {
+  border: 2px solid #444d09;
+  background: var(--primary-black);
+  min-width: 74px;
+  height: 32px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.contact_btn span {
+  font-size: 13px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #44e364 0%, #edfca9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

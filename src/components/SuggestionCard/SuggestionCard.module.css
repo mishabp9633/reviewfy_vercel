@@ -1,0 +1,72 @@
+.main {
+  width: 100%;
+  height: auto;
+  background-color: var(--paper-black);
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+.text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.73px;
+  color: var(--paper-white);
+}
+.copy_btn {
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--primary-white);
+  background-color: var(--grey-color);
+  padding: 8px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.text_skeleton {
+  width: 100%;
+  height: 10px;
+  background-color: var(--grey-color);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.btn_skeleton {
+  margin-left: auto;
+  border-radius: 30px;
+  width: 70px;
+  height: 28px;
+}
+
+.text_skeleton::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -150%;
+  height: 100%;
+  width: 150%;
+  background: linear-gradient(
+    to right,
+    #3d3d3d 0%,
+    rgb(33, 31, 31) 50%,
+    #3d3d3d 100%
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -150%;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 150%;
+  }
+}

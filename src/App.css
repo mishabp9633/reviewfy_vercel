@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --primary-black: #000000;
+  --paper-black: #171717;
+  --bottle-black: #0d0b0b;
+  --primary-white: #ffffff;
+  --secondary-white: #ececec;
+  --paper-white: #cccccc;
+  --grey-color: #3d3d3d;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--primary-black);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.slick-dots {
+  bottom: 0 !important;
+  right: 0;
+  width: fit-content !important;
+  padding: 0;
+  padding-right: 5% !important;
+  z-index: 2;
+}
+.slick-dots li {
+  width: 8px !important;
+  height: 8px !important;
+  margin: 0 2px !important;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.slick-dots li button {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.slick-dots li button:before {
+  font-size: 0 !important;
+  line-height: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  opacity: 1 !important;
+  background-color: #333333;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.slick-dots li.slick-active {
+  background-color: var(--primary-white);
+  width: 20px !important;
+  border-radius: 8px;
+}
+.slick-dots li.slick-active button:before {
+  background-color: var(--primary-white);
+}
